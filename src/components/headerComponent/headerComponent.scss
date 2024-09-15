@@ -1,0 +1,122 @@
+.header_container {
+    padding-top: 25px;
+
+    // height: 100px;
+    width: 100%;
+
+    display: flex;
+
+
+
+    nav {
+        flex-grow: 1;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 15px;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+        .burger_menu {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            
+            width: 5%;
+
+            background: none;
+            outline: none;
+            border: none;
+        }
+
+        .contact_box {
+            margin-left: 40px;
+            width: 70%;
+
+            h2 {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18.75px;
+                letter-spacing: 0.1em;
+                color: white;
+            }
+        }
+
+        .call_btn {
+            width: 25%;
+
+            background: none;
+            border: none;
+            outline: none;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            h2 {
+                font-family: Open Sans;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 21.79px;
+                letter-spacing: 0.1em;
+                text-align: right;
+                color: rgba(255, 172, 48, 1);
+                text-transform: uppercase;
+            }
+
+            .hover_btn_call {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+         
+            }
+
+            .elipse_1,
+            .elipse_2,
+            .elipse_3 {
+                border-radius: 50%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .elipse_1 {
+                height: 80px;
+                width: 80px;
+                border: 0.5px solid rgba(255, 255, 255, 0.386);
+            }
+
+            .elipse_2 {
+                height: 60px;
+                width: 60px;
+                border: 1px solid rgba(255, 255, 255, 0.563);
+            }
+
+            .elipse_3 {
+                height: 40px;
+                width: 40px;
+                background-color: rgba(255, 255, 255, 0.608);
+            }
+
+
+            }
+
+            .call_btn:hover .elipse_1 {
+                border: 0.5px solid rgba(255, 172, 48, 0.386);
+                transition-delay: 0.1s;
+            }
+            .call_btn:hover .elipse_2 {
+                border: 0.5px solid rgba(255, 172, 48, 0.560);
+                transition-delay: 0.3s;
+            }
+            .call_btn:hover .elipse_3 {
+                background: rgba(255, 172, 48, 0.608);
+                transition-delay: 0.5s;
+            }
+        }
+    }

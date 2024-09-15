@@ -1,0 +1,60 @@
+#sidebar {
+    padding-left: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 7%;
+
+    #logo_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 13%;
+        width: 100%;
+    }
+
+    .sidebar_text {
+        width: 65%;
+        height: 40%;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+
+        h2 {
+            margin: 0;
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+            transform-origin: center;
+            white-space: nowrap;
+
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14.06px;
+            letter-spacing: 0.695em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+
+    .line {
+        width: 1px;
+        height: 14.25%;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .social_container{
+        height: 23%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
