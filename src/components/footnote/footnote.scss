@@ -1,0 +1,159 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.footnote_container {
+    position: relative;
+    width: 435px;
+    height: 200px;
+}
+
+.footnote_1 {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    cursor: pointer;
+}
+
+.footnote_2 {
+    display: inline-block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footnote_3 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.line_hover {
+    width: 2px;
+    height: 0;
+    background: rgba(255, 172, 48, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: height 1s, transform 1s;
+    transform: translate(-50%, 0) rotate(126deg);
+    transform-origin: top;
+}
+
+.line_g_hover {
+    width: 0px;
+    height: 2px;
+    background: rgba(255, 172, 48, 1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 1s, left 1s;
+}
+
+.line_g_hover_active {
+    width: 301px;
+    height: 2px;
+    position: absolute;
+    bottom: 4px;
+    background: rgba(255, 172, 48, 1);
+    left: 0;
+    transition: width 1s, transform 1s;
+    transform: translate(0, 50%);
+    transform-origin: top;
+    transition-delay: 0.4s;
+}
+
+.footnote_side_active {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+    background: rgba(255, 172, 48, 1);
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    transition-delay: 0.3s;
+}
+.footnote_side_container_content{
+    display: none;
+}
+.footnote_side_container_content_active{
+    transition: 1s;
+    padding-bottom: 25px;
+    width: 85%;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: right;
+    color: white;
+
+    animation: fadeIn 0.5s forwards;
+}
+
+.footnote_side_container {
+    width: 300px;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footnote_1:hover .line_hover {
+    height: 137px;
+    transition-delay: 0.3s;
+}
+
+.footnote_1:hover {
+    border: 1px solid rgba(255, 172, 48, 0.2);
+    transition-delay: 0.1s;
+
+    .footnote_2 {
+        border: 1px solid rgba(255, 172, 48, 0.5);
+        transition-delay: 0.25s;
+    }
+
+    .footnote_3 {
+        background: rgba(255, 172, 48, 1);
+        transition-delay: 0.4s;
+    }
+}
+

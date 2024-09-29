@@ -1,0 +1,14 @@
+[
+    {
+        "name":"elite",
+        "id":1
+    },
+    {
+        "name":"vip",
+        "id":2
+    },
+    {
+        "name":"extra",
+        "id":3
+    }
+]

@@ -8,7 +8,7 @@ export default function headerComponent() {
    return (
       <div className='header_container'>
        
-         <nav>
+         <nav id='header_nav'>
             <button className='burger_menu'>
                <img src={menu} alt="burger-menu" />
             </button>

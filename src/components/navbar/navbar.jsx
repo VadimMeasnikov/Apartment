@@ -12,7 +12,7 @@ export default function navbar() {
                 <NavLink  className='nav_link' to='/screen2'>
                     <div className='elipse_link_1'><div className="elipse_link_2"></div></div>
                 </NavLink>
-                <NavLink className='nav_link' to='/test'>
+                <NavLink className='nav_link' to='/selection'>
                     <div className='elipse_link_1'><div className="elipse_link_2"></div></div>
                 </NavLink>
                 <NavLink className='nav_link' to='*'>

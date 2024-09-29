@@ -1,0 +1,76 @@
+#selection {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/Services.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #sl_navbar {
+        right: 0;
+    }
+
+    .sl_aside {
+        position: absolute;
+        z-index: 25;
+    }
+
+    #sl_content {
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        #sl_header {
+            width: 100vw;
+            position: absolute;
+            z-index: 25;
+            left: 175px;
+            top: 0;
+        }
+
+        #sl_content_container {
+            width: 90%;
+            height: 50%;
+            border: 1px solid white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            #sl_content_slogan {
+                height: 20%;
+                            
+                display: grid;
+                place-items: center;
+                #sl_slogan {
+                    width: 55%;
+                    font-family: Roboto;
+                    font-size: 22px;
+                    font-weight: 500;
+                    line-height: 25.78px;
+                    letter-spacing: 0.3em;
+                    color: white;
+                }
+            }
+
+            #sl_circle{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+    }
+}

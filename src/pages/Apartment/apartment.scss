@@ -1,0 +1,133 @@
+#apartment {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/vip_gallery.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    animation: fadeIn 0.5s ease-in;
+
+    .ap_aside {
+        width: 5%;
+        height: 100vh;
+    }
+
+    #ap_sidebar {
+        position: absolute;
+        left: 15px;
+        top: 0;
+        z-index: 15;
+    }
+
+    #ap_navbar {
+        position: absolute;
+        right: 45px;
+        top: 0;
+        z-index: 15;
+
+        nav {margin-bottom:150px;}
+    }
+
+    #ap_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 100vh;
+        flex-grow: 1;
+
+        #ap_header {
+            position: absolute;
+            left: 75px;
+            top: 0;
+            z-index: 15;
+        }
+
+        #ap_main {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #ap_main_container {
+                padding-top: 55px;
+                width: 80%;
+                height: 80%;
+
+                #ap_nav {
+                    height: 10%;
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
+                    #ap_link {
+                        width: 20%;
+                        height: 100%;
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        font-family: Open Sans;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 21.79px;
+                        letter-spacing: 0.1em;
+                        color: white;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }
+
+                #ap_main_content {
+                    height: 90%;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+
+                    position: relative;
+                }
+            }
+        }
+
+        #ap_funct_content {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+
+            width: 100vw;
+            height: 15%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            #ap_slider {
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+            }
+
+            #ap_form {
+                width: 50%;
+            }
+        }
+    }
+}
